@@ -34,7 +34,7 @@ O sistema fará um scan da credencial do participante para permitir a entrada no
 Métodos HTTP: Get, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, ...
 
 Corpo da requisição (Request Body)
-Parâmetros de busco (Search Params / Query Params) 'http://localhost:3333/users?name=Emerson'
+Parâmetros de busca (Search Params / Query Params) 'http://localhost:3333/users?name=Emerson'
 Parâmetros de rota (Route Params) -> Identificação de recursos 'DELETE http://localhost:3333/users/5'
 Cabeçalhos (Headers) -> Contexto
 

@@ -2,7 +2,7 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Novo evento2",
+  "title": 11223,
   "details": null,
   "maximumAttendees": 1
 }
@@ -25,3 +25,11 @@ GET http://localhost:3333/events/84ccb7e4-37b3-40c5-8b09-11ef848da432
 ###
 
 GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+GET http://localhost:3333/events/84ccb7e4-37b3-40c5-8b09-11ef848da432/attendees?query=emerson
