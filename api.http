@@ -2,34 +2,32 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": 11223,
+  "title": 'Tech',
   "details": null,
   "maximumAttendees": 1
 }
 
-
 ###
 
-POST http://localhost:3333/events/84ccb7e4-37b3-40c5-8b09-11ef848da432/attendees
+POST http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43/attendees
 Content-Type: application/json
 
 {
   "name": "Emerson Rocha",
-  "email": "emerson80962@gmail.com"
+  "email": "emerson@gmail.com"
 }
 
 ###
 
-GET http://localhost:3333/events/84ccb7e4-37b3-40c5-8b09-11ef848da432
+GET http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43
 
 ###
 
-GET http://localhost:3333/attendees/1/badge
+GET http://localhost:3333/attendees/3/badge
+###
+
+GET http://localhost:3333/attendees/4/check-in
 
 ###
 
-GET http://localhost:3333/attendees/3/check-in
-
-###
-
-GET http://localhost:3333/events/84ccb7e4-37b3-40c5-8b09-11ef848da432/attendees?query=emerson
+GET http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43/attendees?query=diego

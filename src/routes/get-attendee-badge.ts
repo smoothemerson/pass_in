@@ -32,18 +32,18 @@ export async function getAttendeeBadge(app: FastifyInstance) {
         select: {
           name: true,
           email: true,
-            event: {
-              select: {
-                title: true,
-              },
+          event: {
+            select: {
+              title: true,
             },
+          },
         },
         where: {
           id: attendeeId,
         }
       })
 
-      if(attendee === null) {
+      if (attendee === null) {
         throw new BadRequest('Attendee not found.')
       }
 
