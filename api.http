@@ -2,14 +2,14 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": 'Tech',
+  "title": "Tech",
   "details": null,
   "maximumAttendees": 1
 }
 
 ###
 
-POST http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43/attendees
+POST http://localhost:3333/events/694fb648-7742-4f8c-b980-d771ac97fc1a/attendees
 Content-Type: application/json
 
 {
@@ -19,15 +19,15 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43
+GET http://localhost:3333/events/694fb648-7742-4f8c-b980-d771ac97fc1a
 
 ###
 
-GET http://localhost:3333/attendees/3/badge
+GET http://localhost:3333/attendees/1/badge
 ###
 
-GET http://localhost:3333/attendees/4/check-in
+GET http://localhost:3333/attendees/1/check-in
 
 ###
 
-GET http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43/attendees?query=diego
+GET http://localhost:3333/events/694fb648-7742-4f8c-b980-d771ac97fc1a/attendees?query=emerson
