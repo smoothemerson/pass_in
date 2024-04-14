@@ -7,9 +7,9 @@ import { BadRequest } from "./_errors/bad-request";
 export async function checkIn(app: FastifyInstance) {
   app
     .withTypeProvider<ZodTypeProvider>()
-    .get('/attendees/:attendeeId/check-in', {
+    .post('/attendees/:attendeeId/check-in', {
       schema: {
-        summary: 'Check-in an attendee',
+        summary: 'Check-in attendee',
         tags: ['check-ins'],
         params: z.object({
           attendeeId: z.coerce.number().int()
